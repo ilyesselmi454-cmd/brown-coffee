@@ -35,3 +35,6 @@ Portfolio project — created for learning and showcasing front-end web developm
 ---
 
 Made with ☕ and creativity.
+## 🖥️ Website Preview
+
+![BROWN Coffee website preview](brown-coffee-preview.png)
