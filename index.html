@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#171613">
+  <meta name="description" content="BROWN Coffee — Specialty coffee, carefully sourced and beautifully served.">
+
+  <title>BROWN — The Art of Coffee</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="announcement">
+    <span>AN EVERYDAY RITUAL, MADE EXTRAORDINARY</span>
+    <span class="announcement-star">✳</span>
+    <span>CRAFTED WITH INTENTION</span>
+  </div>
+
+  <header class="header" id="top">
+    <a href="#home" class="brand" aria-label="BROWN Coffee home">
+      <span class="brand-mark">B.</span>
+      <span class="brand-name">BROWN<small>COFFEE HOUSE</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="navigation">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home">Home</a>
+      <a href="#philosophy">Our philosophy</a>
+      <a href="#menu">The menu</a>
+      <a href="#visit">Find us</a>
+    </nav>
+
+    <a href="#visit" class="header-cta">
+      VISIT OUR HOUSE <span>↗</span>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          SPECIALTY COFFEE · EST. 2024
+        </p>
+
+        <h1>
+          A slower<br>
+          kind of <em>luxury.</em>
+        </h1>
+
+        <p class="hero-description">
+          Thoughtfully sourced coffee. Quietly beautiful spaces.
+          Small moments that stay with you.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="button button-gold">
+            DISCOVER THE MENU <span>↗</span>
+          </a>
+          <a href="#philosophy" class="text-link">
+            OUR STORY <span>↓</span>
+          </a>
+        </div>
+
+        <div class="hero-footer">
+          <span class="status-dot"></span>
+          A LITTLE SPACE TO SLOW DOWN
+        </div>
+      </div>
+
+      <div class="hero-visual">
+       
+
+<img
+  class="hero-photo"
+  src="images/hero.jpg"
+  alt="Coffee house interior"
+  fetchpriority="high"
+>
+
+
+
+        <div class="photo-overlay"></div>
+
+        <div class="hero-image-top">
+          <span>THE ART OF THE EVERYDAY</span>
+          <span>01 / 03</span>
+        </div>
+
+        <div class="hero-image-bottom">
+          <span class="image-caption-number">01</span>
+          <div>
+            <span class="image-caption-label">A MOMENT FOR YOURSELF</span>
+            <p>Stay a little longer.</p>
+          </div>
+          <span class="image-arrow">↗</span>
+        </div>
+
+        <div class="vertical-label">COFFEE · CRAFT · CONNECTION</div>
+      </div>
+
+      <div class="hero-index">
+        <span>01</span>
+        <span class="index-line"></span>
+        <span>SCROLL TO EXPLORE</span>
+      </div>
+
+    </section>
+
+    <!-- BRAND STATEMENT -->
+    <section class="statement" id="philosophy">
+      <p class="eyebrow">NOT JUST ANOTHER COFFEE</p>
+
+      <h2>
+        Some things are worth<br>
+        <em>taking your time for.</em>
+      </h2>
+
+      <div class="statement-bottom">
+        <span class="ornament">✳</span>
+        <p>
+          We believe a good cup of coffee is more than a drink.
+          It is a pause, a conversation, a ritual worth returning to.
+        </p>
+        <span class="statement-side-note">MADE WITH INTENTION</span>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE DAILY RITUAL</p>
+          <h2>A few of our <em>favorites.</em></h2>
+        </div>
+
+        <p class="section-intro">
+          Thoughtfully prepared.<br>
+          Always worth the moment.
+        </p>
+      </div>
+
+      <div class="menu-toolbar">
+        <span>OUR SELECTION</span>
+
+        <div class="filter-buttons" role="group" aria-label="Filter menu">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">ALL</button>
+          <button class="filter-btn" data-filter="coffee" aria-pressed="false">COFFEE</button>
+          <button class="filter-btn" data-filter="cold" aria-pressed="false">COLD</button>
+          <button class="filter-btn" data-filter="bites" aria-pressed="false">BITES</button>
+        </div>
+      </div><div class="menu-search">
+  <label for="menuSearch">FIND YOUR FAVORITE</label>
+  <input
+    id="menuSearch"
+    type="search"
+    placeholder="Search coffee, latte, pastry..."
+    autocomplete="off"
+  >
+  <p id="menuCount" aria-live="polite">4 items</p>
+</div>
+
+      <div class="product-grid">
+
+        <article class="product-card" data-category="coffee">
+          <div class="product-image">
+            <img
+              src="images/espresso.jpg"
+              alt="Freshly prepared espresso"
+              loading="lazy"
+            >
+            <span class="product-tag">THE CLASSIC</span>
+            <span class="product-number">01</span>
+          </div>
+
+          <div class="product-info">
+            <div>
+              <h3>Signature Espresso</h3>
+              <p>Rich, balanced, beautifully simple.</p>
+            </div>
+            <span class="product-price">6 <small>DT</small></span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="cold">
+          <div class="product-image">
+            <img
+             src="images/iced-latte.jpg"
+              alt="Iced coffee served in a glass"
+              loading="lazy"
+            >
+            <span class="product-tag">HOUSE FAVORITE</span>
+            <span class="product-number">02</span>
+          </div>
+
+          <div class="product-info">
+            <div>
+              <h3>Iced Velvet</h3>
+              <p>Cold coffee, smooth milk, slow afternoons.</p>
+            </div>
+            <span class="product-price">9 <small>DT</small></span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="coffee">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=850&q=85"
+              alt="A carefully prepared latte"
+              loading="lazy"
+            >
+            <span class="product-tag">THE COMFORT</span>
+            <span class="product-number">03</span>
+          </div>
+
+          <div class="product-info">
+            <div>
+              <h3>Golden Latte</h3>
+              <p>Silky texture, mellow and comforting.</p>
+            </div>
+            <span class="product-price">8 <small>DT</small></span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="bites">
+          <div class="product-image">
+            <img
+              src="images/pastry.jpg"
+              alt="Freshly baked artisan pastries"
+              loading="lazy"
+            >
+            <span class="product-tag">BAKED FRESH</span>
+            <span class="product-number">04</span>
+          </div>
+
+          <div class="product-info">
+            <div>
+              <h3>Morning Pastry</h3>
+              <p>Golden layers, made for your first coffee.</p>
+            </div>
+            <span class="product-price">7 <small>DT</small></span>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="menu-note">
+        A SELECTION OF OUR FAVORITES — ASK US ABOUT THE FULL MENU.
+      </p>
+      <p class="demo-notice">
+        DEMO MENU · Names, images and prices are illustrative.
+      </p>
+
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience">
+
+      <div class="experience-image">
+        <img
+          src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=85"
+          alt="Coffee being carefully prepared"
+          loading="lazy"
+        >
+        <span class="experience-stamp">A RITUAL<br>WORTH KEEPING</span>
+      </div>
+
+      <div class="experience-content">
+        <p class="eyebrow">THE BROWN PHILOSOPHY</p>
+
+        <h2>Less rush.<br>More <em>feeling.</em></h2>
+
+        <p class="experience-description">
+          From the first aroma to the last sip, every detail matters.
+          We celebrate good ingredients, considered craft, and the
+          kind of hospitality that makes you feel at home.
+        </p>
+
+        <div class="experience-points">
+          <div>
+            <span>01</span>
+            <p><strong>Considered coffee</strong><small>Quality in every cup.</small></p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <p><strong>Thoughtful details</strong><small>Nothing here is by accident.</small></p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <p><strong>Room to reconnect</strong><small>Good company, no hurry.</small></p>
+          </div>
+        </div>
+
+        <a href="#visit" class="button button-outline">
+          EXPERIENCE BROWN <span>↗</span>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="visit-section" id="visit">
+      <div class="visit-decoration">B.</div>
+
+      <p class="eyebrow">YOUR NEXT FAVORITE MOMENT</p>
+
+      <h2>Make room for<br><em>something good.</em></h2>
+
+      <p class="visit-description">
+        A coffee, a conversation, a moment to yourself.
+        We'd love to welcome you.
+      </p>
+
+      <<a class="button button-gold" href="#visit">
+  GET IN TOUCH <span>↗</span>
+</a>
+
+      <div class="visit-details">
+        <div>
+          <span>FIND OUR HOUSE</span>
+          <p>Your city, Tunisia</p>
+        </div>
+
+        <div>
+          <span>COME BY</span>
+          <p>Opening hours to be confirmed</p>
+        </div>
+
+        <div>
+          <span>SAY HELLO</span>
+          <p>Portfolio demo project</p>
+        </div>
+      </div>
+
+      
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a href="#top" class="brand footer-brand">
+      <span class="brand-mark">B.</span>
+      <span class="brand-name">BROWN<small>COFFEE HOUSE</small></span>
+    </a>
+
+    <p>MADE FOR THE MOMENTS IN BETWEEN.</p>
+
+    <a href="#top" class="back-top">BACK TO TOP ↑</a>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> BROWN COFFEE</span>
+      <span>AN INDEPENDENT CONCEPT PROJECT</span>
+    </div>
+  </footer>
+
+</body>
+</html>
